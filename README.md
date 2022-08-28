@@ -1,46 +1,57 @@
-# Getting Started with Create React App and Redux
+# Netflix Clone 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Hello! This is a clone of the Netflix website that I built while following a tutorial by Sonny Sangha 😁
 
-## Available Scripts
+App Link: https://netflixclone-ad599.web.app
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Start Page that instructs users to create a new (fake) account
+* Ability to create new accounts
+* Once logged in, users can "subscribe" to selected plans
+* Credit card info can be input and actual payments go through stripe
+* When loged in, users can view home page and selection of movies
+* All movvie posters taken from TMDB (The Movie Data Base) API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Architecture
+This app was built with React.JS, HTML, CSS, Firebase v9, Next Auth, Redux, TMDB API, and hosted/deployed with Firebase deploy. This app is a fully funtional React app built on the concept of "components". All part of the app are broken up in to components (Banner, Navigation, Home Screen, Login Screen, Plan Screen, Profile Screen, Sign Up Screen) and thus can be reused as necessary. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Redux is also used to track the "state" of the user's login status and thus allow certain permissions only allowed to users with accounts. 
 
-### `npm test`
+Lastly, the payments and back end are all handled by Firebase Extentions that connect to stripe payment. Thus all data is stored on Firebase v9, from user information, user subscriptions status, and "plan" selection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+### Start Page
+![Screen Shot 2022-08-28 at 12 50 39 AM](https://user-images.githubusercontent.com/99083937/187058586-ff9017d0-6611-423b-9bf8-a9bf1fee513e.png)
+Start Page that greets users before login
 
-### `npm run build`
+## Login Page 
+![Screen Shot 2022-08-28 at 1 12 13 AM](https://user-images.githubusercontent.com/99083937/187058626-14f880d9-84b6-471e-b40b-dbaade588d53.png)
+Login Page that allows users to sign up or sign in
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Plans Page
+![Screen Shot 2022-08-28 at 1 13 36 AM](https://user-images.githubusercontent.com/99083937/187058668-f841bdb3-4c5f-40ce-aa64-12e3f309fdd9.png)
+Plans page that shows available plans and rates
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Payment Page
+![Screen Shot 2022-08-28 at 1 14 58 AM](https://user-images.githubusercontent.com/99083937/187058701-ab9f486a-c5fd-43d9-8711-e6863ec1b7de.png)
+Payment Page that is connected to stripe and allows users to pay for subscriptions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Home Page
+![Screen Shot 2022-08-28 at 1 16 48 AM](https://user-images.githubusercontent.com/99083937/187058757-60f08282-d4ef-4397-ab18-ecd470a987b6.png)
+Home Page after user has subscribed
 
-### `npm run eject`
+## Thank you
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you would like to use/test the app feel free to follow the link above and either make your own fake account or use these credentials:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    email: daniel@gmail.com
+    password: 123456789
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you would like to test the stripe payment please use this FAKE tester credit card:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    4242 4242 4242 4242
+    04/24
+    424
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Video Tutorial Link: https://www.youtube.com/watch?v=CLMo0W7mTVo
