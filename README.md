@@ -2,7 +2,8 @@
 
 Hello! This is a clone of the Netflix website that I built while following a tutorial by Sonny Sangha 😁
 
-App Link: https://netflixclone-ad599.web.app
+App Link: https://netflixclone-ad599.web.app 
+** Feel free to view this app on your phone! It is mobile friendly**
 
 ## Features
 
@@ -25,21 +26,26 @@ Lastly, the payments and back end are all handled by Firebase Extentions that co
 ![Screen Shot 2022-08-28 at 12 50 39 AM](https://user-images.githubusercontent.com/99083937/187058586-ff9017d0-6611-423b-9bf8-a9bf1fee513e.png)
 Start Page that greets users before login
 
+
 ## Login Page 
 ![Screen Shot 2022-08-28 at 1 12 13 AM](https://user-images.githubusercontent.com/99083937/187058626-14f880d9-84b6-471e-b40b-dbaade588d53.png)
 Login Page that allows users to sign up or sign in
+
 
 ## Plans Page
 ![Screen Shot 2022-08-28 at 1 13 36 AM](https://user-images.githubusercontent.com/99083937/187058668-f841bdb3-4c5f-40ce-aa64-12e3f309fdd9.png)
 Plans page that shows available plans and rates
 
+
 ## Payment Page
 ![Screen Shot 2022-08-28 at 1 14 58 AM](https://user-images.githubusercontent.com/99083937/187058701-ab9f486a-c5fd-43d9-8711-e6863ec1b7de.png)
 Payment Page that is connected to stripe and allows users to pay for subscriptions
 
+
 ## Home Page
 ![Screen Shot 2022-08-28 at 1 16 48 AM](https://user-images.githubusercontent.com/99083937/187058757-60f08282-d4ef-4397-ab18-ecd470a987b6.png)
 Home Page after user has subscribed
+
 
 ## Thank you
 
